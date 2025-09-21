@@ -1,26 +1,169 @@
 @import "tailwindcss";
+@import "devicon/devicon.min.css";
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card1 {
+    animation: slideLeft 0.8s ease-out forwards;
+}
+
+.card2 {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.card3 {
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+
+.card4 {
+    animation: slideRight 0.8s ease-out forwards;
+}
+
+.card5 {
+    animation: slidePop ease-out .8s forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidePop {
+    0% {
+        transform: translateZ(-100px) scale(0.4);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: .7 scale(0.7);
+    }
+
+    100% {
+        opacity: 1 scale(1);
+    }
+}
+
+
+.typing {
+    width: 50;
+    animation: typing 2s steps(50), .5s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 50ch
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+
+.shadow {
+    box-shadow: 4px 8px 48px 4px rgba(255, 105, 180, 0.6);
+}
+
+.projects:hover{
+    box-shadow: 0 8px 8px 4px rgba(252, 70, 107, 0.5);
 }
