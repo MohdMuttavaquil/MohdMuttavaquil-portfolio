@@ -17,7 +17,7 @@ const About = () => {
           <p className='text-[1rem]'>Hello it's me </p>
           <h1 className='bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] bg-clip-text text-transparent text-[2rem] inline-block mt-1'>MOHD MUTTAVAQUIL</h1>
           <h2 className='text-[2rem]'>Web Development</h2>
-          <h2 className='text-[1rem] mt-2'>Full Stack Web Developer. I building modern, scalable, and user-friendly web applications. </h2>
+          <h2 className='text-[1rem] mt-2'>Full Stack Web Developer. I building modern, scalable, and user-friendly web applications. I have hands-on experience building responsive websites and projects.</h2>
           
             <Link href="#contact"><button className='bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] px-3 py-1 rounded-lg text-white cursor-pointer mt-6'>Contect Me</button></Link>
           
@@ -31,7 +31,7 @@ const About = () => {
 
         </div>
 
-        <img src='./html.svg' className={`${inView1 ? "card4 opacity-100" : "opacity-0"} shadow h-[20rem] rounded-full bg-red-400`}></img>
+        <img src='./picture.png' className={`${inView1 ? "card4 opacity-100" : "opacity-0"} shadow h-[20rem] rounded-full bg-red-400`}></img>
 
       </div>
 

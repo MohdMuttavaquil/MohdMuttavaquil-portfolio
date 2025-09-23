@@ -19,7 +19,7 @@ export default function Home() {
       <p className="text-[2rem] text-center mt-[7rem]">Education</p>
       <div ref={ref1} className={`${inView1? "fadeIn": "opacity-0"} my-[2rem] w-[80%] flex mx-auto justify-evenly`}>
 
-        <div className="bg-[#222222] rounded-xl w-[20rem] ">
+        <div className="bg-[#222222] hover:border-2 hover:border-[#444444] rounded-xl w-[20rem] ">
 
           <p className="text-[1.25rem] font-semibold mt-4 ml-6">B.Sc.</p>
           <p className="w-[90%] mx-auto mt-2">Bachelor of Science in Computer Science, Mathematics, and Physics from Gurukul Kangri University, Haridwar <br></br>
@@ -28,7 +28,7 @@ export default function Home() {
 
         </div>
 
-        <div className="bg-[#222222] rounded-xl w-[20rem]">
+        <div className="bg-[#222222] hover:border-2 hover:border-[#444444] rounded-xl w-[20rem]">
 
           <p className="text-[1.25rem] font-semibold ml-6 mt-4">XII</p>
           <p className="w-[90%] mx-auto mt-2 mb-6">Class 12 (PCM  Physics, Chemistry, Mathematics) <br></br>
@@ -39,7 +39,7 @@ export default function Home() {
 
         </div>
 
-        <div className="bg-[#222222] rounded-xl w-[20rem]">
+        <div className="bg-[#222222] hover:border-2 hover:border-[#444444] rounded-xl w-[20rem]">
           <p className="text-[1.25rem] font-semibold ml-6 mt-4">X</p>
           <p className="w-[90%] mx-auto mt-2 mb-6">class 10 <br></br>
            Uttarakhand Board of School Education <br></br>
