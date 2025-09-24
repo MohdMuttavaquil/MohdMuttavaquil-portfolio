@@ -25,11 +25,16 @@ const Project = () => {
             <p className='text-[1.5rem] font-semibold'>Food Delivery App</p>
             <p className=''>Food Delivery App order meals online with secure payments and cash on delivery, add items to cart and sign in with user authentication. </p>
 
-            <div className='flex flex-wrap mb-4'>
+            <div className='flex flex-wrap'>
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>React.js</button>
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>TailwindCSS</button>
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>Node.js</button>
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>Mongoodb</button>
+            </div>
+
+            <div className='Link mt-2 mb-4 flex gap-4 ml-[1rem] '>
+                <a className='text-blue-600' href='https://getfood-frontrnd.onrender.com/' target='_blank'>Live Demo</a>
+                <a className='text-blue-600' href='https://github.com/MohdMuttavaquil/GetFood' target='_blank'>GitHub Repo</a>
             </div>
 
           </div>
@@ -53,6 +58,11 @@ const Project = () => {
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>Mongoodb</button>
             </div>
 
+            <div className='Link mt-2 mb-4 flex gap-4 ml-[1rem] '>
+                <a className='text-blue-600' href='https://college-website-frontend-9yal.onrender.com/' target='_blank'>Live Demo</a>
+                <a className='text-blue-600' href='https://github.com/MohdMuttavaquil/college-Website' target='_blank'>GitHub Repo</a>
+            </div>
+
           </div>
 
         </div>
@@ -71,6 +81,10 @@ const Project = () => {
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>APIs</button>
             </div>
 
+            <div className='Link mt-2 mb-4 flex gap-4 ml-[1rem] '>
+                <a className='text-blue-600' href='https://github.com/MohdMuttavaquil/Weather-app' target='_blank'>GitHub Repo</a>
+            </div>
+
           </div>
 
         </div>
@@ -86,6 +100,10 @@ const Project = () => {
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>HTML</button>
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>CSS</button>
               <button className='px-3 py-1 bg-[#222222] mt-2 mx-2 rounded-lg'>JavsScript</button>
+            </div>
+
+            <div className='Link mt-2 mb-4 flex gap-4 ml-[1rem] '>
+                <a className='text-blue-600' href='https://github.com/MohdMuttavaquil/Calculator' target='_blank'>GitHub Repo</a>
             </div>
 
           </div>
