@@ -16,8 +16,8 @@ const inter = Inter({
 
 const Nevber = () => {
   return (
-  // Navbar
-<nav className='fixed top-0 w-full z-50 bg-black pt-5 shadow-md'>
+
+<nav className='fixed top-0 w-full z-50 bg-black pt-5'>
   <div className='w-[80%] mx-auto h-[4rem] flex justify-between items-center'>
     <div className={`logo text-2xl ${pacifico.className} bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] bg-clip-text text-transparent`}>
       PORTFOLIO

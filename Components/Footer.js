@@ -1,13 +1,20 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
     <>
-    <div id='contact' className='w-[80%] mx-auto mt-[3rem] flex justify-evenly'>
-        <div>
-            <p className="text-[2rem] text-center">Get In Touch</p>
+    <div className='mt-[4rem] bg-[#1E1E1E] flex flex-col gap-2 justify-center'>
 
-        </div>
+       <ul className='flex gap-6 mt-5 justify-center'>
+      <li className={`cursor-pointer hover:font-bold text-sm`}><Link href="/">HOME</Link></li>
+      <li className={`cursor-pointer hover:font-bold text-sm`}><Link href="#about">ABOUT</Link></li>
+      <li className={`cursor-pointer hover:font-bold text-sm`}><Link href="#skills">SKILLS</Link></li>
+      <li className={`cursor-pointer hover:font-bold text-sm`}><Link href="#projects">PROJECTS</Link></li>
+    </ul>
+
+    <p className='text-center mb-2 mt-4'> © 2025 MOHD MUTTAVAQUIL. All rights reserved.</p>
+
     </div>
     </>
   )

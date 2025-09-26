@@ -4,7 +4,8 @@ import About from "@/About/About";
 import Education from "@/About/Education";
 import Project from "@/Project/Project";
 import { Inter } from "next/font/google";
-import { Download, Mail } from "lucide-react";
+import { Download, Mail  } from "lucide-react";
+import Contact from "@/About/Contact";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,10 +13,11 @@ const inter = Inter({
 });
 
 
-// Home Page
 export default function Home() {
+
   return (
-    <div className="pt-[6rem]"> {/* <-- padding-top equals navbar height + extra spacing */}
+
+    <div className={`pt-[6rem] ${inter.className}`}> 
 
       <div className="h-[70vh] flex flex-col items-center justify-center">
         <div className="card5 text-[5rem] text-center">
@@ -28,13 +30,13 @@ export default function Home() {
         <div className="flex gap-6 mt-6 fadeIn justify-center">
           <Link href="#contact">
             <button className='flex gap-2 bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] px-3 py-1 rounded-lg text-white cursor-pointer'>
-              <Mail className="w-5 h-5" /> Contact Me
+              <Mail className="w-5 h-5 pt-1" /> Contact Me
             </button>
           </Link>
 
           <Link href="./resume.pdf" target="_blank">
             <button className='flex gap-1.5 bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] px-3 py-1 rounded-lg text-white cursor-pointer'>
-              <Download className="w-5 h-5" /> Resume
+              <Download className="w-5 h-5 pt-1" /> Resume
             </button>
           </Link>
         </div>
@@ -43,6 +45,7 @@ export default function Home() {
       <About />
       <Project />
       <Education />
+      <Contact />
     </div>
   );
 }
