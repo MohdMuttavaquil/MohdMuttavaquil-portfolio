@@ -1,10 +1,13 @@
+"use client"
 import React from 'react'
 import { useState } from 'react'
 import { ArrowRight } from 'lucide-react'
+import { useInView } from '@/utils/Scroll'
 
 const Contact = () => {
 
   const [result, setResult] = useState("")
+  const [ref, inView ] = useInView(0.5)
 
   const onSubmit = async (event) => {
     event.preventDefault()
@@ -30,7 +33,7 @@ const Contact = () => {
   }
 
   return (
-    <div id='contact' className='w-[80%] flex mx-auto flex-col my-[7rem] '>
+    <div id='contact' ref={ref} className={`${inView ? "fadeIn opacity-100" : "opacity-0"} w-[80%] flex mx-auto flex-col my-[7rem]`}>
 
       <div className='flex flex-col items-center'>
         <p className='text-xl text-center'>Connact with me</p>

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "MOHD MUTTAVAQUIL RESUME",
-  description: "MOHD MUTTAVAQUIL RESUME",
+  title: "MOHD MUTTAVAQUIL",
+  description: "MOHD MUTTAVAQUIL PORTFOLIO",
 };
 
 const montserrat = Montserrat({
