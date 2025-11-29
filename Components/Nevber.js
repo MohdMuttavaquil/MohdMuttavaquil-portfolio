@@ -24,10 +24,12 @@ const Nevber = () => {
     </div>
 
     <ul className='flex gap-6 mt-2'>
-      <li className={`cursor-pointer hover:font-bold text-sm ${inter.className}`}><Link href="/">HOME</Link></li>
+     
       <li className={`cursor-pointer hover:font-bold text-sm ${inter.className}`}><Link href="#about">ABOUT</Link></li>
       <li className={`cursor-pointer hover:font-bold text-sm ${inter.className}`}><Link href="#skills">SKILLS</Link></li>
       <li className={`cursor-pointer hover:font-bold text-sm ${inter.className}`}><Link href="#projects">PROJECTS</Link></li>
+       <li className={`cursor-pointer hover:font-bold text-sm ${inter.className}`}><Link href="#education">EDUCATION</Link></li>
+
     </ul>
 
     <div>

@@ -10,7 +10,7 @@ const Education = () => {
     <div>
 
          <p className="text-[2rem] text-center mt-[7rem]">Education</p>
-      <div ref={ref1} className={`${inView1? "fadeIn": "opacity-0"} my-[2rem] w-[80%] flex mx-auto justify-evenly`}>
+      <div id='education' ref={ref1} className={`${inView1? "fadeIn": "opacity-0"} my-[2rem] w-[80%] flex mx-auto justify-evenly`}>
 
         <div className="bg-[#222222] hover:border-2 hover:border-[#444444] rounded-xl lg:w-[30%] ">
 

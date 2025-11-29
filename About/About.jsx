@@ -1,27 +1,43 @@
 "use client"
 import { useInView } from '@/utils/Scroll'
 import Link from 'next/link'
+import { frontend, backend } from '@/Data/dta'
+import { Download, Mail } from 'lucide-react'
 
 const About = () => {
 
   const [ref1, inView1] = useInView(0.5)
-  const [ref2, inView2] = useInView(0.5)
+  const [ref2, inView2] = useInView(0.7)
 
   return (
     <div className='w-[80%] mx-auto'>
 
       {/*About section*/}
-      <div ref={ref1} id='about' className='my-[8rem] flex justify-around'>
+      <div id='about' className={`fadeIn my-[8rem] flex justify-around`}>
 
-        <div className={`info ${inView1 ? "card1 opacity-100" : "opacity-0"} w-[50%]`}>
-           
+        <div className={`info w-[50%]`}>
+
           <p className='text-[1rem]'>Hello it's me </p>
           <h1 className='bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] bg-clip-text text-transparent text-[2rem] inline-block mt-1'>MOHD MUTTAVAQUIL</h1>
-          <h2 className='text-[2rem]'>Full Stack Web <br></br>Developer</h2>
-          <h2 className='text-[1rem] mt-2 w-[75%]'>Full Stack Web Developer. I building modern, scalable, and user-friendly web applications. I have hands-on experience building responsive websites and projects.</h2>
-          
-            <Link href="#contact"><button className='bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] px-3 py-1 rounded-lg text-white cursor-pointer mt-6'>Contect Me</button></Link>
-          
+          <h2 className='text-[2rem]'>Full Stack Web Developer</h2>
+
+          <h2 className='text-[1rem] mt-2 w-[90%]'> I am a Full Stack Web Developer who enjoys building modern and user-friendly web applications. I have real project experience creating responsive websites and improving their performance. I like writing clean code, learning new tools, and building things that work smoothly for users and continuously improving my technical skills.</h2>
+
+          <div className="flex gap-6 mt-4">
+
+            <Link href="#contact">
+              <button className='flex gap-2 bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] px-3 py-1 rounded-lg text-white cursor-pointer'>
+                <Mail className="w-5 h-5 pt-1" /> Contact Me
+              </button>
+            </Link>
+
+            <Link href="./resume.pdf" target="_blank">
+              <button className='flex gap-1.5 bg-gradient-to-r from-[#3F5EFB] to-[#FC466B] px-3 py-1 rounded-lg text-white cursor-pointer'>
+                <Download className="w-5 h-5 pt-1" /> Resume
+              </button>
+            </Link>
+          </div>
+
 
           <div className='flex gap-6 mt-6'>
             <a href='https://github.com/MohdMuttavaquil' target='_blank'><i className="devicon-github-original-wordmark text-[3rem] rounded-full"></i> </a>
@@ -32,38 +48,40 @@ const About = () => {
 
         </div>
 
-        <img src='./profile.jpeg' className={`${inView1 ? "card4 opacity-100" : "opacity-0"} shadow h-[20rem] rounded-full bg-red-400`}></img>
+        <img src='./profile.jpeg' className={`shadow h-[20rem] rounded-full bg-red-400`}></img>
 
       </div>
 
       {/*Skills Section */}
 
-      <div id='skills' className='my-[2rem]'>
+       <h2 className='text-[2rem] text-center my-[2rem]'>Technical Skills</h2>
 
-        <div ref={ref2} className={`text-[2rem] text-center opacity-0 ${inView2 ? "fadeIn" : ""}`}>Technical Skills</div>
+      <div id='skills' className={`my-[2rem] w-[80%] flex mx-auto justify-evenly`}>
 
-        <div ref={ref2} className='flex flex-wrap justify-evenly'>
+        <div ref={ref1} id="frontend" className={`${inView1 ? "card3 opacity-100" : "opacity-0"} border-2 border-[#444444] hover:border-4 rounded-xl lg:w-[45%]`} >
 
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+          <p className='font-semibold text-center text-xl mt-6'>Frontend</p>
 
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+          <div className='flex flex-wrap justify-around mt-2 mb-6 px-2 '>
+            {frontend.map((i, index) => <div className='flex gap-1 bg-[#222222] rounded-2xl justify-center items-center px-3 py-1 my-2' key={index}>
+              <i className={`${i.url} text-[2.5rem]`}> </i>
+              <p className='font-semibold'>{i.name}</p>
+            </div>)}
+          </div>
 
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+        </div>
 
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+        <div ref={ref2} id="backend" className={`${inView2 ? "card3 opacity-100" : "opacity-0"} border-2 border-[#444444] hover:border-4 rounded-xl lg:w-[45%]`} >
 
+          <p className='font-semibold text-center text-xl mt-6'>Backend</p>
 
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+          <div className='flex flex-wrap justify-around mt-2 mb-6 px-2'>
+            {backend.map((i, index) => <div className='flex gap-1 bg-[#222222] rounded-2xl justify-center items-center px-3 py-1 my-2' key={index}>
+              <i className={`${i.url} text-[2.5rem]`}> </i>
+              <p className='font-semibold'>{i.name}</p>
+            </div>)}
+          </div>
 
-          <i className={`devicon-express-original ${inView2 ? "card5 opacity-100" : "opacity-0"} text-[7rem] rounded-full mx-10 my-6`}></i>
-
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-
-          <img className={`${inView2 ? "card5 opacity-100" : "opacity-0"} h-[8rem] rounded-full mx-10 my-6`} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
 
         </div>
 
