@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "MOHD MUTTAVAQUIL",
   description: "MOHD MUTTAVAQUIL PORTFOLIO",
+  verificatiion: {
+    google: "ZvtS-YbBDOX71IebhqCPg2Zc9NApffZ8zvKx78ZfNlA"
+  }
 };
 
 const montserrat = Montserrat({
